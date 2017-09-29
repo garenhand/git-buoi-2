@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+</head>
+<!-- Latest compiled and minified CSS & JS -->
+<script src="https://code.jquery.com/jquery.js"></script>
+<script>
+	var message = 'Website freetuts.net thật tuyệt';
+ 
+// ĐOẠN 2
+$.ajax({
+    url : "https://www.google.com.vn/search?site=&source=hp&q=indexeddb+angular&oq=indexeddb+angular&gs_l=hp.3..35i39k1j0i22i30k1l2j0i22i10i30k1j0i22i30k1l6.90252.98473.0.98602.28.21.3.0.0.0.282.2377.0j12j2.14.0....0...1.1.64.hp..11.17.2388.0..0j0i67k1j0i131k1j0i10i67k1j0i19k1j0i22i30i19k1.1b7Ty96G0EI",
+    data : {},
+    async:false,
+    success : function(result){
+        message = 'Giá trị đã được thay đổi';
+    }
+});
+ 
+// ĐOẠN 3
+alert(message); 
+</script>
+<body>
+		
+</body>
+</html>
